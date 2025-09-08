@@ -21,3 +21,6 @@ uv add fastmcp
 
 # Verify the installation using
 fastmcp version
+
+# Features
+Server uses HTTP/Streamable transport protocol
