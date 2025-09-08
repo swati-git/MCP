@@ -1,7 +1,9 @@
 [project]
 name = "ecommercemcpserver"
 version = "0.1.0"
-description = "Add your description here"
+description = "An MCP server for an e-commerce store that exposes cart operations as MCP tools, and a client that leverages the LLM to interact with these tools."
 readme = "README.md"
 requires-python = "==3.13.7"
-dependencies = []
+dependencies = [
+    "fastmcp>=2.12.2",
+]
