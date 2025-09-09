@@ -17,10 +17,20 @@ uv venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-uv add fastmcp
+uv add mcp
 
 # Verify the installation using
-fastmcp version
+mcp version
 
 # Features
-Server uses HTTP/Streamable transport protocol
+sse_server uses stio transport protocol
+
+# Dev tools
+
+For monitoring the logs install tmux(Terminal Multiplexing)
+brew install tmux
+[tmux](https://jeongwhanchoi.medium.com/install-tmux-on-osx-and-basics-commands-for-beginners-be22520fd95e)
+
+# Testing tools
+
+MCP inspector , which comes bundled in the mcp package
