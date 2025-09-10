@@ -22,15 +22,21 @@ uv add mcp
 # Verify the installation using
 mcp version
 
-# Features
-sse_server uses stio transport protocol
-
 # Dev tools
-
 For monitoring the logs install tmux(Terminal Multiplexing)
 brew install tmux
 [tmux](https://jeongwhanchoi.medium.com/install-tmux-on-osx-and-basics-commands-for-beginners-be22520fd95e)
 
 # Testing tools
 
-MCP inspector , which comes bundled in the mcp package
+MCP inspector , which comes bundled in the mcp package. Run the sever in the "dev" mode
+uv run mcp dev server.py
+
+# Features
+- An MCP Server that uses the stdio transport for local servertesting.
+- An MCP server that uses the  [streamable HTTP transport] (https://modelcontextprotocol.io/docs/learn/architecture#transport-layer)
+ - The server provides a resource that allows a client to view the products available
+ - The server provides a tool that allows a client to add products to a cart.
+
+
+
