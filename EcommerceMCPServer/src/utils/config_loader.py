@@ -31,8 +31,9 @@ class ConfigLoader:
             return Path(env_path)
         
         # Default to server_config/servers.json
+        logger.info("Using default config path: server-config/servers.json")
         project_root = Path(__file__).parent.parent.parent
-        return project_root / "server-config" / "servers.json"
+        return project_root / "server-config" / "server.json"
     
     def load_config(self) -> Dict[str, Any]:
         """Load and cache configuration from JSON file."""
