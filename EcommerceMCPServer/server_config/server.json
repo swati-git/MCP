@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "Ecommerce_Server": {
-      "type": "http",
-      "url": "http://localhost:8000/mcp/",
-      "description": "Shopping  utilities supporting listing avaiable products and adding them in a cart"
-    }
-  }
-}
